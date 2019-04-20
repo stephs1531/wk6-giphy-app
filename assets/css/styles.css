@@ -1,0 +1,109 @@
+body { 
+    background: url(../dr_who_wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+#app-container {
+    width: 90%;
+    background-color:#F0EBE7;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* ---------------------------- Header CSS -------------------------- */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.header {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ------------------------------- Buttons CSS -------------------------- */
+#gif-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.add-btn {
+    background-color: #37435D;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.add-btn:hover{
+    background-color:#F58240;
+}
+
+#add-gif {
+    background-color: #325686;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+}
+#add-gif:hover{
+    background-color:#F58240;
+}
+
+/* -------------------------------- Form Styling ------------------------------ */
+#gif-form {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+#search-input {
+    height: 58px;
+    width: 40%
+}
+
+label {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #080F2B;
+}
+
+/* ---------------------------------- Gif Styling ---------------------------------- */
+#gifs-view {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.whoDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.gifBlock {
+    padding: 30px;
+}
+
+.gif-image {
+    width: 400px;
+}

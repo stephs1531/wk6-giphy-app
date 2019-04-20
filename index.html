@@ -7,33 +7,41 @@
     <title>Document</title>
 
     <!-- ----------------------- Bootstrap & CSS ----------------------------- -->
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 <body>
+<div class="header-container">
+       <img class="header" src="assets/dr_who_type.png">
+</div>
+
+   <div id="app-container">
+        
+        <!-- -------------------------- Div for gif buttons ------------------- -->
+        <div id="gif-buttons"></div>
     
-    <!-- -------------------------- Div for gif buttons ------------------- -->
-    <div id="gif-buttons"></div>
-
-    <!-- ---------------- Form and Button to add more gif buttons --------------- -->
-    <div id="add-gifs" class="col-6">
-        <form id="gif-form">
-            <label for="animal-input">Add Animals!</label>
-            <input type="text" id="search-input">
-
-            <!-- ----------------- Button to add more gifs ------------------- -->
-            <input id="add-gif" type="submit" value="Add Animals!">
-        </form>
-    </div>
+        <!-- ---------------- Form and Button to add more gif buttons --------------- -->
+        <div id="add-gifs">
+            <form id="gif-form">
+                <label for="animal-input">Add More Timey-Wimey Stuff!</label>
+                <br>
+                <input type="text" id="search-input">
     
-
-
-
-    <!-- -------------------- div for gifs to be added to ----------------- -->
-    <div id="gifs-view" class="col-6"></div>
+                <!-- ----------------- Button to add more gifs ------------------- -->
+                <input id="add-gif" type="submit" value="Add More Stuff!">
+            </form>
+        </div>
+        
     
+    
+    
+        <!-- -------------------- div for gifs to be added to ----------------- -->
+        <div id="gifs-view"></div>
+        
+   </div>
     
     
     
