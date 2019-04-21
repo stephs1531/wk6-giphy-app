@@ -42,12 +42,12 @@ $("#add-gif").on("click", function(event) {
 
 
 //add event listener to all buttons to run ajax call function
-// $(document).on("click", "add-btn", showGifs);
+// $(document).on("click", ".add-btn",);    
 
 
 // -------------------------- When button is clicked, make ajax call to api and generate gifs for that button -------------
-$(".add-btn").on("click", function () {
-    alert("I was clicked");
+$(document).on("click", ".add-btn", function () {
+    console.log("I was clicked");
 
     // $("#gifs-view").empty();
     
@@ -90,13 +90,15 @@ $(".add-btn").on("click", function () {
         whoDiv.append(gifBlock);
 
     // ------------------------ add images to html --------------------------------------
-        $("#gifs-view").prepend(whoDiv);
+        
+    $("#gifs-view").empty();
+    $("#gifs-view").prepend(whoDiv);
     } //close for loop
         
 
     });//close ajax call
 
-    renderButtons(); //call function to actually render the buttons
+    //renderButtons(); //call function to actually render the buttons
 
 // }; //close showGifs function
 
